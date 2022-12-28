@@ -4,19 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Password Generator</title>
   </head>
   <body>
-    <h1>
-      Generate a
-      <div>random password</div>
-    </h1>
-    <h2>Never use an insecure password again.</h2>
-    <button>Generate passwords</button>
-    <hr />
-    <div class="container">
-      <div class="password--box"></div>
-      <div class="password--box"></div>
+    <div class="app--container">
+      <h1>
+        Generate a
+        <div class="green--text">random password</div>
+      </h1>
+      <h2>Never use an insecure password again.</h2>
+      <div class="passwordLengthContainer">
+        <label for="passwordLength">Password Length</label>
+        <input name="passwordLength" type="text" id="passwordLength" />
+      </div>
+      <button class="passwordButton" id="passwordButton">
+        Generate passwords
+      </button>
+      <button class="clearButton" id="clearButton">Clear</button>
+
+      <hr />
+      <div class="password--container">
+        <div class="password--box" id="passwordBoxOne"></div>
+        <div class="password--box" id="passwordBoxTwo"></div>
+      </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
