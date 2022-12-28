@@ -99,13 +99,6 @@ let passwordOne = "";
 let passwordTwo = "";
 let disabled = false;
 
-let passwordLengthInput = document.getElementById("passwordLength");
-passwordLengthInput.addEventListener("change", setPasswordLength);
-
-function setPasswordLength() {
-  passwordLengthNew = passwordLengthInput.value;
-}
-
 let passwordBtn = document.getElementById("passwordButton");
 passwordBtn.addEventListener("click", generatePassword);
 
